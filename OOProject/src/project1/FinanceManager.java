@@ -5,8 +5,8 @@ import project.Employee;
 public class FinanceManager extends Employee {
     private double budget;
 
-    public FinanceManager(String name, int id) {
-        super(name, id);
+    public FinanceManager(String name, String password, double budget) {
+        super(name, password);
         this.budget = budget;
     }
 
@@ -26,5 +26,9 @@ public class FinanceManager extends Employee {
             System.out.println("Transaction approved. Remaining budget: " + budget);
         }
     }
-}
 
+    @Override
+    public String getRole() {
+        return "Finance Manager";
+    }
+}

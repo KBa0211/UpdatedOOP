@@ -1,27 +1,23 @@
+/*
+package project1;
+
+import project.User;
+import project.Manager;
+import project1.FinanceManager;
+import project1.DiplomaProject;
+
 public class Main {
     public static void main(String[] args) {
-        // Создание урока
-        Lesson lesson = new Lesson("Java Programming", LessonType.LECTURE, Language.EN);
-        lesson.displayInfo();
+        Manager manager = new Manager("Alice", 1, "alice@company.com", "password");
+        FinanceManager financeManager = new FinanceManager("Bob", "password", 10000.0);
 
-        // Работа с ResearchSupervisor
-        try {
-            ResearchSupervisor supervisor = new ResearchSupervisor("Dr. Smith", 2);
-            supervisor.assignSupervisor();
-        } catch (InvalidSupervisorException e) {
-            System.out.println(e.getMessage());
-        }
+        DiplomaProject project = new DiplomaProject("AI Research");
+        project.addPublishedPaper(new Message("AI in Medicine"));
 
-        // Работа с ResearchProject
-        try {
-            ResearchProject project = new ResearchProject("AI Development");
-            User student = new Student("Alice", 3.5);
-            User researcher = new Researcher("Dr. John", 5);
+        manager.getEmail();
+        financeManager.approveTransaction(5000.0);
 
-            project.addParticipant(researcher);
-            project.addParticipant(student); // Это вызовет исключение
-        } catch (InvalidProjectParticipantException e) {
-            System.out.println(e.getMessage());
-        }
+        project.printDetails();
     }
 }
+*/ 

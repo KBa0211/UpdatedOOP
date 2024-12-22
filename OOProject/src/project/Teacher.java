@@ -34,7 +34,7 @@ public class Teacher  extends Employee {
     public void putMarks(Student student, String course, int marks) {
         System.out.println("Assigned marks: " + marks + " for course: " + course + " to student: " + student.getName());
     }
-
+    /*
     @Override
     public String sendMessages() {
         return super.sendMessages() + message;
@@ -44,8 +44,13 @@ public class Teacher  extends Employee {
     public String sendComplaints() {
         return super.sendComplaints() + complaints;
     }
-
+	*/
     public String getTeachersInfo(){
         return "Name: " + getName();
     }
+	@Override
+	public String getRole() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

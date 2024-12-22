@@ -25,7 +25,7 @@ public class UserController {
 			Student newStudent = new Student(username, password);
 			break;
 		case MANAGER:
-			Manager newManager = new Manager(username, password);
+			Manager newManager = new Manager(username, 0, password, password);
 			break;
 		default:
 			return false;

@@ -1,6 +1,6 @@
 package ResearchActivities;
 
-class ResearchPaper {
+public class ResearchPaper {
     private String title;
     private String authors;
     private String journal;

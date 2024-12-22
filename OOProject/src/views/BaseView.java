@@ -112,4 +112,9 @@ public class BaseView {
 		}
 	
 	}
+
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
 }
